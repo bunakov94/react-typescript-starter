@@ -1,10 +1,11 @@
 import React from 'react';
 import SomeBlock from '../../blocks/SomeBlock';
-import './Header.scss';
 
-const Header = () => (
+import style from './Header.module.scss';
+
+const Header: React.FC = () => (
   <header>
-    <h1>Hello from Header</h1>
+    <h1 className={style.header}>Hello from Header</h1>
     <SomeBlock />
   </header>
 );
